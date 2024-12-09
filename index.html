@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ReVanced Plus</title>
+    
+  <link rel="stylesheet" href="assets/css/styles.css">
+    
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      min-height: 100vh;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .top-section {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 45rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .top-section img {
+      width: 22px;
+      height: 22px;
+      cursor: pointer;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: rgba(20, 20, 20, 0.8);
+      border-radius: 25px;
+      padding: 0.5rem 1rem;
+      flex: 1;
+      max-width: 300px;
+    }
+
+    .search-bar input {
+      background: transparent;
+      border: none;
+      color: white;
+      flex: 1;
+      margin-left: 0.5rem;
+    }
+
+    .search-bar input::placeholder {
+      color: #aaa;
+    }
+
+    .icon-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .icon-header img {
+      width: 75px;
+      height: 75px;
+    }
+
+    .icon-header h4 {
+      margin: 0.5rem 0 0.2rem 0;
+    }
+
+    .icon-header p {
+      margin: 0;
+      color: #ccc;
+    }
+
+    .rounded-body {
+      background: rgba(20, 20, 20, 0.8);
+      border-radius: 15px;
+      padding: 1rem;
+      width: 90%;
+      max-width: 400px;
+      margin: 0.3rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .rounded-body img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .rounded-body button {
+      background: rgba(255, 255, 255, 0.8);
+      border: none;
+      border-radius: 50px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      color: #000;
+    }
+
+    .rounded-body button:hover {
+      filter: brightness(1.2);
+    }
+
+    footer {
+      background: rgba(20, 20, 20, 0.8);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      border-top: 1px solid white;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      .rounded-body {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+
+      .rounded-body button {
+        align-self: flex-end;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-section">
+    <img src="assets/icons/home.png" alt="Home" onclick="window.open('index.html', '_blank')">
+    <img src="assets/icons/about.png" alt="Info" onclick="window.open('info.html', '_blank')">
+    <div class="search-bar">
+      <img src="assets/icons/search.png" alt="Search">
+      <input type="text" id="search" placeholder="Search...">
+    </div>
+  </div>
+    
+    <br>
+     <br>
+      <br>
+      <br>
+
+  <div class="icon-header">
+    <img src="assets/branding/logo.png" alt="Main Icon">
+    <h4>ReVanced Plus</h4>
+    <p>Download the official ReVanced apps!</p>
+  </div>
+
+  <div class="rounded-body" data-keywords="microg">
+    <img src="assets/icons/microg.png" alt="Body Icon">
+    <h5>ReVanced MicroG 0.3.1.4.240913</h5>
+    <button onclick="downloadFile('#')">📥</button>
+  </div>
+  <div class="rounded-body" data-keywords="ig">
+    <img src="assets/icons/instagram.png" alt="Body Icon">
+    <h5>Instagram ReVanced 353.2.0.49.90 (ARM7)</h5>
+    <button onclick="downloadFile('#')">📥</button>
+  </div>
+  <div class="rounded-body" data-keywords="ig">
+    <img src="assets/icons/instagram.png" alt="Body Icon">
+    <h5>Instagram ReVanced 353.2.0.49.90 (ARM8)</h5>
+    <button onclick="downloadFile('#')">📥</button>
+  </div>
+      <div class="rounded-body" data-keywords="ytm">
+    <img src="assets/icons/yt-music.png" alt="Body Icon">
+    <h5>YT Music ReVancedX 7.16.53 (ARM7)</h5>
+    <button onclick="downloadFile('#')">📥</button>
+  </div>
+      <div class="rounded-body" data-keywords="ytm">
+    <img src="assets/icons/yt-music.png" alt="Body Icon">
+    <h5>YT Music ReVancedX 7.16.53 (ARM8)</h5>
+    <button onclick="downloadFile('#')">📥</button>
+  </div>
+      <div class="rounded-body" data-keywords="ytm">
+    <img src="assets/icons/yt-music.png" alt="Body Icon">
+    <h5>YT Music ReVancedX 7.23.51 (ARM7)</h5>
+    <button onclick="downloadFile('#')">📥</button>
+  </div>
+      <div class="rounded-body" data-keywords="ytm">
+    <img src="assets/icons/yt-music.png" alt="Body Icon">
+    <h5>YT Music ReVancedX 7.23.51 (ARM8)</h5>
+    <button onclick="downloadFile('#')">📥</button>
+  </div>
+      <div class="rounded-body" data-keywords="reddit">
+    <img src="assets/icons/reddit.png" alt="Body Icon">
+    <h5>Reddit ReVanced 2024.17.0 (All)</h5>
+    <button onclick="downloadFile('#')">📥</button>
+  </div>
+      <div class="rounded-body" data-keywords="tiktok">
+    <img src="assets/icons/tiktok.png" alt="Body Icon">
+    <h5>TikTok ReVanced 36.5.4 (All)</h5>
+    <button onclick="downloadFile('#')">📥</button>
+  </div>
+      <div class="rounded-body" data-keywords="twitch">
+    <img src="assets/icons/twitch.png" alt="Body Icon">
+    <h5>Twitch ReVanced 16.9.1 (ARM7)</h5>
+    <button onclick="downloadFile('#')">📥</button>
+  </div>
+      <div class="rounded-body" data-keywords="twitch">
+    <img src="assets/icons/twitch.png" alt="Body Icon">
+    <h5>Twitch ReVanced 16.9.1 (ARM8)</h5>
+    <button onclick="downloadFile('#')">📥</button>
+  </div>
+      <div class="rounded-body" data-keywords="ytrx">
+    <img src="assets/icons/youtube.png" alt="Body Icon">
+    <h5>YT ReVancedX 19.16.39 (All)</h5>
+    <button onclick="downloadFile('#')">📥</button>
+  </div>
+      <div class="rounded-body" data-keywords="ytr">
+    <img src="assets/icons/youtube.png" alt="Body Icon">
+    <h5>YT ReVanced 19.34.42 (All)</h5>
+    <button onclick="downloadFile('#')">📥</button>
+  </div>
+    
+    <br>
+     <br>
+    <br>
+     <br>
+
+  <footer>
+    ReVanced Plus 2024, by Quasar Developer
+  </footer>
+
+  <script>
+
+    const searchBar = document.getElementById('search');
+    const bodies = document.querySelectorAll('.rounded-body');
+
+    searchBar.addEventListener('input', () => {
+      const query = searchBar.value.toLowerCase();
+      bodies.forEach(body => {
+        const keywords = body.getAttribute('data-keywords').toLowerCase();
+        body.style.display = keywords.includes(query) ? 'flex' : 'none';
+      });
+    });
+
+    searchBar.addEventListener('blur', () => {
+      bodies.forEach(body => {
+        body.style.display = 'flex';
+      });
+    });
+
+    function downloadFile(fileId) {
+      const downloadUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+      window.open(downloadUrl, '_blank');
+    }
+  </script>
+</body>
+</html>
